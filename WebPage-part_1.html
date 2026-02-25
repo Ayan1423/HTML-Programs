@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Enter Name</title>
+    <script>
+      function openWelcomePage() {
+        var name = document.getElementById("name").value;
+        window.location.href =
+          "WebPage-part_2.html?name=" + encodeURIComponent(name);
+      }
+
+      function resetName() {
+        var textbox = document.getElementById("name");
+        textbox.value = "100 ";
+
+        //for (var i = 1; i <= 100; i++) {
+        //    textbox.value += "Victoria ";
+        //}
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Enter Your Name</h2>
+
+    <label>Name:</label>
+    <input type="text" id="name" value="Victoria" />
+
+    <br /><br />
+
+    <button onclick="openWelcomePage()">Enter</button>
+    <button onclick="resetName()">Reset</button>
+  </body>
+</html>
