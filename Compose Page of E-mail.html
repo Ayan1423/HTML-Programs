@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Compose Email</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 80px;
+            font-size: 18px;
+        }
+        input[type="text"] {
+            width: 400px;
+            height: 25px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        textarea {
+            width: 400px;
+            height: 150px;
+            font-size: 16px;
+            vertical-align: top;
+        }
+        .btn {
+            margin-left: 90px;
+            margin-top: 15px;
+            padding: 8px 20px;
+            font-size: 18px;
+            background-color: #f2d5b5;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+        .row {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Compose Mail</h2>
+
+        <form>
+            <div class="row">
+                <label>To</label>
+                <input type="text" name="to">
+            </div>
+
+            <div class="row">
+                <label>Copy</label>
+                <input type="text" name="copy">
+            </div>
+
+            <div class="row">
+                <label>Message</label>
+                <textarea name="message"></textarea>
+            </div>
+
+            <div class="row">
+                <input type="submit" value="SEND" class="btn">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
