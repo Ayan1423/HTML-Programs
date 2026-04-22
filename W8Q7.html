@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Details Form</title>
+    <style>
+      body {
+        font-family: Arial;
+        background-color: #e6e6e6;
+      }
+
+      .container {
+        width: 600px;
+        margin: 40px auto;
+      }
+
+      h2 {
+        text-align: center;
+        text-decoration: underline;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      td {
+        padding: 10px;
+      }
+
+      label {
+        font-weight: bold;
+        color: #2f4f6f;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 90%;
+        padding: 5px;
+      }
+
+      textarea {
+        height: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Details</h2>
+
+      <form>
+        <table>
+          <tr>
+            <td><label>Your Name:</label></td>
+            <td><input type="text" name="name" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Your Address:</label></td>
+            <td><input type="text" name="address" /></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td><input type="text" name="address2" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Your Gender:</label></td>
+            <td>
+              Male <input type="radio" name="gender" /> Female
+              <input type="radio" name="gender" checked />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Your Country:</label></td>
+            <td>
+              <select>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Your Opinion:</label></td>
+            <td><textarea></textarea></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

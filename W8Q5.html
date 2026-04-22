@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Greeting Message</title>
+  </head>
+  <body>
+    <h2 id="greet"></h2>
+
+    <script>
+      let now = new Date();
+      let hour = now.getHours();
+      let message = "";
+
+      if (hour < 12) {
+        message = "Good Morning";
+      } else if (hour < 17) {
+        message = "Good Afternoon";
+      } else if (hour < 20) {
+        message = "Good Evening";
+      } else {
+        message = "Good Night";
+      }
+
+      document.getElementById("greet").innerHTML = message;
+    </script>
+  </body>
+</html>
