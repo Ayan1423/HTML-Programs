@@ -1,0 +1,158 @@
+/* ============================================
+   CD Catalog — External Stylesheet
+   catalog.css  (Beginner Level)
+   ============================================ */
+
+
+/* ---- PAGE BACKGROUND & TEXT ---- */
+
+body {
+    background-color: #f0f4f8;      /* light blue-grey background */
+    font-family: Arial, sans-serif; /* simple, very common font */
+    font-size: 16px;                /* comfortable reading size */
+    color: #222222;                 /* dark text for easy reading */
+    padding: 30px;                  /* space around the whole page */
+}
+
+
+/* ---- PAGE HEADER ---- */
+
+header {
+    text-align: center;             /* centre the heading */
+    margin-bottom: 30px;            /* space below the header */
+    padding: 20px;                  /* inner space around header content */
+    background-color: #2c3e50;      /* dark navy background */
+    border-radius: 8px;             /* slightly rounded corners */
+}
+
+h1 {
+    font-size: 36px;                /* large heading */
+    color: #f1c40f;                 /* bright yellow text */
+    margin: 0;                      /* remove browser default spacing */
+}
+
+h1 span {
+    color: #ffffff;                 /* white for the word "Catalog" */
+}
+
+.subtitle {
+    font-size: 14px;                /* smaller than the heading */
+    color: #bdc3c7;                 /* light grey */
+    margin-top: 6px;                /* small gap below the title */
+}
+
+
+/* ---- TABLE WRAPPER ---- */
+
+.table-wrapper {
+    max-width: 1000px;              /* stop the table getting too wide */
+    margin: 0 auto;                 /* centre on the page */
+}
+
+
+/* ---- TABLE ---- */
+
+table {
+    width: 100%;                    /* fill the wrapper */
+    border-collapse: collapse;      /* removes gaps between cell borders */
+    background-color: #ffffff;      /* white table background */
+    border: 2px solid #2c3e50;      /* dark border around the whole table */
+}
+
+
+/* ---- TABLE HEADER ROW ---- */
+
+thead {
+    background-color: #2c3e50;      /* dark navy background */
+}
+
+thead th {
+    color: #f1c40f;                 /* yellow header text */
+    font-size: 14px;                /* slightly smaller than body */
+    text-align: left;               /* align text to the left */
+    padding: 14px 16px;             /* space inside each header cell */
+    border: 1px solid #34495e;      /* subtle border between cells */
+}
+
+
+/* ---- TABLE BODY ROWS ---- */
+
+tbody tr {
+    border-bottom: 1px solid #dcdcdc; /* light line between rows */
+}
+
+/* Zebra striping: alternate row colours for easy reading */
+tbody tr:nth-child(even) {
+    background-color: #eaf1fb;      /* light blue for even rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;      /* white for odd rows */
+}
+
+tbody td {
+    padding: 12px 16px;             /* space inside each data cell */
+    border: 1px solid #dcdcdc;      /* light border around each cell */
+    vertical-align: middle;         /* vertically centre the content */
+}
+
+
+/* ---- INDIVIDUAL COLUMN STYLES ---- */
+
+/* Row number */
+.col-num {
+    text-align: center;             /* centre the number */
+    color: #888888;                 /* grey */
+    font-size: 14px;
+    width: 40px;                    /* narrow fixed width */
+}
+
+/* Album title */
+.col-title {
+    font-weight: bold;              /* bold text */
+    color: #2c3e50;                 /* dark navy */
+}
+
+/* Artist name */
+.col-artist {
+    color: #1a73e8;                 /* blue */
+    font-style: italic;             /* italic */
+}
+
+/* Release year */
+.col-year {
+    color: #555555;                 /* medium grey */
+    font-size: 14px;
+}
+
+/* Price */
+.col-price {
+    color: #27ae60;                 /* green */
+    font-weight: bold;
+}
+
+/* Genre — styled as a pill/badge */
+.col-genre span {
+    background-color: #fef3cd;      /* pale yellow background */
+    color: #856404;                 /* dark yellow text */
+    border: 1px solid #f1c40f;      /* yellow border */
+    border-radius: 12px;            /* rounded pill shape */
+    padding: 3px 10px;              /* space inside the badge */
+    font-size: 13px;
+}
+
+/* Country */
+.col-country {
+    color: #555555;                 /* medium grey */
+    font-size: 14px;
+}
+
+
+/* ---- FOOTER ---- */
+
+footer {
+    text-align: center;             /* centre the text */
+    margin-top: 24px;               /* space above footer */
+    font-size: 13px;                /* small text */
+    color: #888888;                 /* grey */
+}

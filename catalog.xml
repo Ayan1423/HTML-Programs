@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="catalog.css"?>
+<?xml-stylesheet type="text/xsl" href="catalog.xsl"?>
+
+<!--
+  ================================================
+  CD Catalog — catalog.xml
+  Linked to:
+    • catalog.css  (external CSS stylesheet)
+    • catalog.xsl  (XSL stylesheet → HTML table)
+  ================================================
+-->
+
+<catalog>
+
+  <cd id="1">
+    <title>Thriller</title>
+    <artist>Michael Jackson</artist>
+    <year>1982</year>
+    <price>12.99</price>
+    <genre>Pop / R&amp;B</genre>
+    <country>USA</country>
+  </cd>
+
+  <cd id="2">
+    <title>Back in Black</title>
+    <artist>AC/DC</artist>
+    <year>1980</year>
+    <price>11.49</price>
+    <genre>Hard Rock</genre>
+    <country>Australia</country>
+  </cd>
+
+  <cd id="3">
+    <title>The Dark Side of the Moon</title>
+    <artist>Pink Floyd</artist>
+    <year>1973</year>
+    <price>13.99</price>
+    <genre>Progressive Rock</genre>
+    <country>UK</country>
+  </cd>
+
+  <cd id="4">
+    <title>Hotel California</title>
+    <artist>Eagles</artist>
+    <year>1976</year>
+    <price>10.99</price>
+    <genre>Classic Rock</genre>
+    <country>USA</country>
+  </cd>
+
+  <cd id="5">
+    <title>Rumours</title>
+    <artist>Fleetwood Mac</artist>
+    <year>1977</year>
+    <price>11.99</price>
+    <genre>Soft Rock</genre>
+    <country>UK / USA</country>
+  </cd>
+
+  <cd id="6">
+    <title>Purple Rain</title>
+    <artist>Prince</artist>
+    <year>1984</year>
+    <price>12.49</price>
+    <genre>Pop / Funk</genre>
+    <country>USA</country>
+  </cd>
+
+  <cd id="7">
+    <title>Abbey Road</title>
+    <artist>The Beatles</artist>
+    <year>1969</year>
+    <price>14.99</price>
+    <genre>Rock</genre>
+    <country>UK</country>
+  </cd>
+
+  <cd id="8">
+    <title>Born to Run</title>
+    <artist>Bruce Springsteen</artist>
+    <year>1975</year>
+    <price>10.49</price>
+    <genre>Rock</genre>
+    <country>USA</country>
+  </cd>
+
+  <cd id="9">
+    <title>Kind of Blue</title>
+    <artist>Miles Davis</artist>
+    <year>1959</year>
+    <price>13.49</price>
+    <genre>Jazz</genre>
+    <country>USA</country>
+  </cd>
+
+  <cd id="10">
+    <title>21</title>
+    <artist>Adele</artist>
+    <year>2011</year>
+    <price>9.99</price>
+    <genre>Soul / Pop</genre>
+    <country>UK</country>
+  </cd>
+
+  <cd id="11">
+    <title>Nevermind</title>
+    <artist>Nirvana</artist>
+    <year>1991</year>
+    <price>11.99</price>
+    <genre>Grunge / Alternative</genre>
+    <country>USA</country>
+  </cd>
+
+  <cd id="12">
+    <title>Legend</title>
+    <artist>Bob Marley &amp; The Wailers</artist>
+    <year>1984</year>
+    <price>10.99</price>
+    <genre>Reggae</genre>
+    <country>Jamaica</country>
+  </cd>
+
+</catalog>
