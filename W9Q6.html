@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Frames Layout</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+
+      .container {
+        display: flex;
+        height: 100vh;
+      }
+
+      .left {
+        width: 30%;
+        background: #333;
+        padding: 20px;
+      }
+
+      .left a {
+        display: block;
+        color: white;
+        margin: 10px 0;
+        text-decoration: none;
+      }
+
+      .right {
+        width: 70%;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Frame 1 -->
+      <div class="left">
+        <a href="#" onclick="loadForm(1)">Form 1</a>
+        <a href="#" onclick="loadForm(2)">Form 2</a>
+      </div>
+
+      <!-- Frame 2 -->
+      <div class="right" id="content">
+        <h2>Select a form</h2>
+      </div>
+    </div>
+
+    <script>
+      function loadForm(type) {
+        let formHTML = "";
+
+        if (type === 1) {
+          formHTML = `
+        <h3>Login Form</h3>
+        Name: <input type="text" id="name"><br><br>
+        <button onclick="validate1()">Submit</button>
+        <p id="result"></p>`;
+        } else {
+          formHTML = `
+        <h3>Age Form</h3>
+        Age: <input type="number" id="age"><br><br>
+        <button onclick="validate2()">Submit</button>
+        <p id="result"></p>`;
+        }
+
+        document.getElementById("content").innerHTML = formHTML;
+      }
+
+      function validate1() {
+        let name = document.getElementById("name").value;
+        let res = name === "" ? "Name cannot be empty" : "Valid Name!";
+        document.getElementById("result").innerHTML = res;
+      }
+
+      function validate2() {
+        let age = document.getElementById("age").value;
+        let res = age < 18 ? "Age must be 18+" : "Valid Age!";
+        document.getElementById("result").innerHTML = res;
+      }
+    </script>
+  </body>
+</html>

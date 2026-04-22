@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Result</title>
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+        background: #e6f2ff;
+      }
+      .result {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="result">
+      <h2>Your Submitted Data</h2>
+      <p id="output"></p>
+    </div>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+
+      let name = params.get("name");
+      let age = params.get("age");
+      let course = params.get("course");
+
+      document.getElementById("output").innerHTML =
+        "Name: " + name + "<br>" + "Age: " + age + "<br>" + "Course: " + course;
+    </script>
+  </body>
+</html>

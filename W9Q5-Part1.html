@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <style>
+      body {
+        font-family: Arial;
+        background: #f2f2f2;
+      }
+      .box {
+        width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+      }
+      button {
+        padding: 10px;
+        width: 100%;
+        background: #4caf50;
+        color: white;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h2>Student Questionnaire</h2>
+
+      <form action="W9Q5-Part2.html" method="get">
+        Name: <input type="text" name="name" required />
+
+        Age: <input type="number" name="age" required />
+
+        Course:
+        <select name="course">
+          <option>BCA</option>
+          <option>BSc</option>
+          <option>MCA</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
