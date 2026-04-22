@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Calendar</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        margin: 10px;
+        display: inline-block;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 5px;
+        width: 30px;
+        text-align: center;
+      }
+
+      h3 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let year = prompt("Enter Year:");
+
+      const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      for (let m = 0; m < 12; m++) {
+        document.write("<table>");
+        document.write("<h3>" + months[m] + " " + year + "</h3>");
+
+        document.write("<tr>");
+        document.write(
+          "<th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>",
+        );
+        document.write("</tr>");
+
+        let firstDay = new Date(year, m, 1).getDay();
+        let daysInMonth = new Date(year, m + 1, 0).getDate();
+
+        let date = 1;
+
+        for (let i = 0; i < 6; i++) {
+          document.write("<tr>");
+
+          for (let j = 0; j < 7; j++) {
+            if (i === 0 && j < firstDay) {
+              document.write("<td></td>");
+            } else if (date > daysInMonth) {
+              break;
+            } else {
+              document.write("<td>" + date + "</td>");
+              date++;
+            }
+          }
+
+          document.write("</tr>");
+        }
+
+        document.write("</table>");
+      }
+    </script>
+  </body>
+</html>

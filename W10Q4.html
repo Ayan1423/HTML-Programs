@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Web Enhancements</title>
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+      }
+
+      img {
+        width: 200px;
+        transition: transform 0.5s;
+        cursor: pointer;
+      }
+
+      .animate {
+        transform: rotate(360deg) scale(1.2);
+      }
+
+      select {
+        padding: 8px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Web Page Enhancements</h2>
+
+    <!-- 🔹 Rollover Effect -->
+    <img
+      src="image1.jpg"
+      id="myImage"
+      onmouseover="this.src = 'image2.jpg'"
+      onmouseout="this.src = 'image1.jpg'"
+      onclick="animateImage()"
+    />
+
+    <br /><br />
+
+    <!-- 🔹 Pull-down Menu -->
+    <select onchange="goToPage(this.value)">
+      <option value="">-- Select Page --</option>
+      <option value="page1.html">Page 1</option>
+      <option value="page2.html">Page 2</option>
+      <option value="page3.html">Page 3</option>
+    </select>
+
+    <script>
+      // 🔹 Animation on click
+      function animateImage() {
+        let img = document.getElementById("myImage");
+        img.classList.toggle("animate");
+      }
+
+      // 🔹 Navigation from dropdown
+      function goToPage(page) {
+        if (page !== "") {
+          window.location.href = page;
+        }
+      }
+    </script>
+  </body>
+</html>
