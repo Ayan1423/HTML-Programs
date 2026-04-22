@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ABC.COM - Page 2</title>
+  </head>
+  <body>
+    <h2>Welcome to ABC.COM</h2>
+
+    <p>
+      ABC.COM is a platform that provides information, services, and resources
+      related to computer science and technology.
+    </p>
+
+    <form action="W6Q6-Part3.html" method="get">
+      <!-- Hidden field to carry name forward -->
+      <input type="hidden" name="username" id="username" />
+      <input type="submit" value="Next" />
+    </form>
+
+    <script>
+      // Get name from URL
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get("username");
+
+      // Store it in hidden field
+      document.getElementById("username").value = name;
+    </script>
+  </body>
+</html>
