@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Find Day</title>
+  </head>
+  <body>
+    <script>
+      let dateInput = prompt("Enter a date (1-31):");
+
+      let today = new Date();
+      today.setDate(dateInput); // Set the entered date
+
+      let day = today.getDay(); // 0 = Sunday, 6 = Saturday
+
+      let days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+
+      document.write("Day is: " + days[day]);
+    </script>
+  </body>
+</html>
